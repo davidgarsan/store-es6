@@ -1,6 +1,5 @@
 coverage/
 node_modules/
-bundle.js
 *-compiled.js
 webpack.config.babel.js
 karma.conf.js
