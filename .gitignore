@@ -1,0 +1,11 @@
+node_modules
+coverage/
+bundle.js
+*.log
+
+# Babel temp files
+*-compiled.js
+*.js.map
+
+# Webstorm
+.idea

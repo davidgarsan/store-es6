@@ -1,0 +1,185 @@
+@import url("reset.css");
+
+* {
+    box-sizing: border-box;
+    -webkit-font-smoothing: antialiased;
+}
+
+body {
+    background-color: #eeeeee;
+    font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+}
+
+button {
+    font-size: 1rem;
+    font-weight: bold;
+}
+
+article {
+    margin: 1rem 1.5rem;
+    background-color: #ffffff;
+    border-top-right-radius: .5rem;
+    border-top-left-radius: .5rem;
+    overflow: hidden;
+}
+
+footer {
+    border-radius: .5rem;
+    border: .1rem solid #e0e0e0;
+    padding: .9rem;
+    margin-left: 1.5rem;
+    margin-right: 1.5rem;
+    margin-bottom: 1.5rem;
+    background-color: #ffffff;
+}
+
+.cart > h1 {
+    text-align: center;
+    font-weight: bold;
+    margin-bottom: .5rem;
+}
+
+.cart li {
+    padding: .3rem 0;
+}
+
+.cart > .total {
+    font-weight: bold;
+    display: inline-block;
+    float: right;
+    margin-top: 1rem;
+}
+
+.cart > .clear {
+    display: none;
+    margin-top: 1rem;
+}
+
+header {
+    padding: .9rem;
+    text-align: center;
+    font-weight: bold;
+    background-color: #008800;
+    color: #ffffff;
+    font-size: 2rem;
+}
+
+header:before {
+    background-color: crimson;
+    width: 5rem;
+    height: 5rem;
+    border-radius: 50%;
+    position: absolute;
+    content: "Great Deals!!";
+    top: .3rem;
+    right: 1rem;
+    color: #ffffff;
+    text-align: center;
+    line-height: 2.2rem;
+    font-weight: bold;
+    font-size: 1rem;
+    transform: rotate(15deg);
+    box-shadow: .1rem .1rem .2rem #000000;
+    z-index: 1;
+}
+
+.products-list > li {
+    padding: 1.2rem;
+    border-left: .1rem solid #e0e0e0;
+    border-bottom: .3rem solid #6699cc;
+    border-right: .1rem solid #e0e0e0;
+    position: relative;
+    height: 6rem;
+    font-size: 1.5rem;
+    font-weight: bold;
+    text-shadow: 0rem 0rem .1rem #000000;
+    color: #ffffff;
+    z-index: 0;
+}
+
+.products-list > li > button {
+    float: right;
+    height: 100%;
+    background-color: #66CC44;
+    color: #ffffff;
+}
+
+.products-list > li > small {
+    color: crimson;
+    font-size: .8rem;
+    width: 25%;
+    display: inline-block;
+    position: absolute;
+    right: 25%;
+    text-shadow: none;
+    line-height: 1rem;
+}
+
+
+.prod_fruit_tea {
+    background: url("/images/fruit_tea.jpg") transparent no-repeat center left;
+    background-size: contain;
+}
+
+.prod_coffee {
+    background: url("/images/coffee.jpg") transparent no-repeat left;
+    background-size: contain;
+}
+
+.prod_strawberry {
+    background: url("/images/strawberry.jpg") transparent no-repeat left;
+    background-size: contain;
+}
+
+.products-list > li:before {
+    text-shadow: none;
+    background-color: orange;
+    width: 5rem;
+    height: 5rem;
+    border-radius: 50%;
+    position: absolute;
+    content: attr(data-price) " \A3";
+    top: .3rem;
+    left: 8rem;
+    color: #ffffff;
+    text-align: center;
+    line-height: 5rem;
+    font-weight: bold;
+    font-size: 1.2rem;
+    transform: rotate(15deg);
+    box-shadow: .1rem .1rem .2rem #000000;
+    z-index: -1;
+}
+
+@media only screen and (min-device-width : 320px) and (max-device-width : 480px) {
+    body {
+        font-size: 100%;
+    }
+    header:before {
+        display: none;
+    }
+    .products-list > li {
+        text-shadow: 0rem 0rem .1rem #000000;
+        color: orange;
+    }
+    .products-list > li {
+        height: 12rem;
+    }
+    .products-list > li:before {
+        bottom: .5rem;
+        left: .5rem;
+        top: auto;
+    }
+    .products-list > li > button {
+        position: absolute;
+        bottom: 0.5rem;
+        right: .5rem;
+        height: 50%;
+    }
+    .products-list > li > small {
+        width: 40%;
+        right: 4%;
+        text-align: right;
+        color: #000000;
+    }
+}
