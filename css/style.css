@@ -117,17 +117,17 @@ header:before {
 
 
 .prod_fruit_tea {
-    background: url(“./images/fruit_tea.jpg") transparent no-repeat center left;
+    background: url("/store-es6/images/fruit_tea.jpg") transparent no-repeat center left;
     background-size: contain;
 }
 
 .prod_coffee {
-    background: url(“./images/coffee.jpg") transparent no-repeat left;
+    background: url("/store-es6/images/coffee.jpg") transparent no-repeat left;
     background-size: contain;
 }
 
 .prod_strawberry {
-    background: url(“./images/strawberry.jpg") transparent no-repeat left;
+    background: url("/store-es6/images/strawberry.jpg") transparent no-repeat left;
     background-size: contain;
 }
 
