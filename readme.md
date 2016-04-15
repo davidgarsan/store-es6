@@ -1,4 +1,4 @@
-# Simple Web Store Example (ES6/Babel/Webpack/PostCSS/Responsive)
+# Simple Responsive Web Store Example (ES6/Babel/Webpack/PostCSS/Responsive)
 
 **Tools and highlights:**
 * ES6/Babel.
